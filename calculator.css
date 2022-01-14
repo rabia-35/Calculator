@@ -1,0 +1,32 @@
+
+#result{
+    background-color: rgb(235, 235, 230);
+    height: 150px
+}
+
+#btns button{
+margin: 1% 2%;
+border-style: hidden;
+border-radius: 6%;
+height: 50px;
+
+}
+.nums{
+    background-color:rgb(77, 77, 76);
+}
+.nums button{
+    background-color: rgb(209, 209, 209);
+    width: 28%;
+}
+.grey{
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(77, 77, 76);
+}
+.grey button{
+    background-color:rgb(253, 201, 30);
+    color: white;
+    width: 19%;
+}
+
+
