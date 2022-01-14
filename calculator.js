@@ -1,9 +1,9 @@
-const btns=document.getElementsByTagName("button")
+const btns=document.getElementsByTagName("button") //Bütün buttonlar değişkene atadık
 
 function calculator(e){
     let btn=e.target
-    const btnVal=document.getElementById(btn.id).innerHTML
-    const res=document.querySelector("#result")
+    const btnVal=document.getElementById(btn.id).innerHTML//buttonların innerHTML'leri değişkene atadık
+    const res=document.querySelector("#result")//sonuç değişkene atadık
    
     switch (btnVal) {
         case "0":
@@ -23,11 +23,11 @@ function calculator(e){
             res.innerHTML+= btnVal;
         break;
         case "÷":
-            res.innerHTML+="/"
+            res.innerHTML+="/"// eval() ÷ işaretini tanımadığı için / işareti ile yerdeğiştirdik
         break;
         case "x²":
             let num=res.innerHTML
-            res.innerHTML=num*num
+            res.innerHTML=num*num // sayının karesi aldık
 
         break;
         case "C":
@@ -35,10 +35,10 @@ function calculator(e){
         break;
         case "=":
             let result=res.innerHTML
-            res.innerHTML=eval(result)
+            res.innerHTML=eval(result)//sonuç kısmındaki işleminin yapılmasını eval() ile sağladık
 }
 }
 
 for(let button of btns){
-    button.onclick=calculator;
+    button.onclick=calculator;// btns atanan buttonların onclick işleminde calculator function çalıştırdık.
 }
