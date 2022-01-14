@@ -1,7 +1,8 @@
 
 #result{
     background-color: rgb(235, 235, 230);
-    height: 150px
+    height: 150px;
+    font-size: xx-large;
 }
 
 #btns button{
