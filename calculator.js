@@ -19,6 +19,7 @@ function calculator(e){
         case "+":
         case "-":
         case "*":
+        case ".":
             res.innerHTML+= btnVal;
         break;
         case "÷":
